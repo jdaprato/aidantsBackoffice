@@ -5,19 +5,11 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 
-import { AppRoutingModule } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './layouts/components/components.module';
 
 import { AppComponent } from './app.component';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserProfileComponent } from './admin/user-profile/user-profile.component';
-import { TableListComponent } from './share/table-list/table-list.component';
-import { TypographyComponent } from './share/typography/typography.component';
-import { IconsComponent } from './share/icons/icons.component';
-import { MapsComponent } from './share/maps/maps.component';
-import { NotificationsComponent } from './admin/notifications/notifications.component';
-import { UpgradeComponent } from './admin/upgrade/upgrade.component';
 import {
   AgmCoreModule
 } from '@agm/core';

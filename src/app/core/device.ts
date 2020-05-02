@@ -1,5 +1,4 @@
 import {IDevice} from '../models/device'
-import { stat } from 'fs';
 
 export class Device {
     private _device: IDevice = {} as IDevice

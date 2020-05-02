@@ -1,13 +1,7 @@
 import { Routes } from '@angular/router';
 
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../admin/user-profile/user-profile.component';
-import { TableListComponent } from '../../share/table-list/table-list.component';
-import { TypographyComponent } from '../../share/typography/typography.component';
-import { IconsComponent } from '../../share/icons/icons.component';
-import { MapsComponent } from '../../share/maps/maps.component';
-import { NotificationsComponent } from '../../admin/notifications/notifications.component';
-import { UpgradeComponent } from '../../admin/upgrade/upgrade.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DevicesComponent } from './devices/devices.component';
 
 export const AdminRoutes: Routes = [
     // {
@@ -53,11 +47,12 @@ export const AdminRoutes: Routes = [
     //     }]
     // }
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
+    { path: 'devices', component: DevicesComponent}
+/*     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'upgrade',        component: UpgradeComponent }, */
 ];
