@@ -4,12 +4,20 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DevicesComponent } from './devices/devices.component';
 
 export const AdminRoutes: Routes = [
-    // {
-    //   path: '',
-    //   children: [ {
-    //     path: 'dashboard',
-    //     component: DashboardComponent
-    // }]}, {
+    {
+       path: '',
+       children: [ {
+        path: 'dashboard',
+         component: DashboardComponent
+    }]},
+    {
+        path: '',
+        children: [ {
+         path: 'devices',
+          component: DevicesComponent
+     }]},
+
+    //, {
     // path: '',
     // children: [ {
     //   path: 'userprofile',
@@ -46,13 +54,4 @@ export const AdminRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'devices', component: DevicesComponent}
-/*     { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent }, */
 ];
