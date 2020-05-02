@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-table-list',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-list.component.css']
 })
 export class TableListComponent implements OnInit {
+
+  @Input() item: any;
 
   constructor() { }
 
